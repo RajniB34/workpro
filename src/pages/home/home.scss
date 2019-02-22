@@ -1,3 +1,21 @@
 page-home {
-
+    .bd{
+        background-image: url('../assets/imgs/background.jpg');
+        background-size:cover;
+        border:3px solid rgb(103, 92, 131);
+    }
+    
+    #form1{
+        border:3px solid rgb(103, 92, 131);
+        border-radius:15px;
+        text-align: center;
+    }
+#abc{
+    color:white;
+    width:250px;
+    font-size: 15px;
+    background-color: rgb(66, 47, 119);
+    display: block;
+    margin: auto;
+}
 }

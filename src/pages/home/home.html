@@ -1,14 +1,33 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>login</ion-title>
+      </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="bd">
+  
+  <marquee><h3>Welcome User {{var1}}</h3></marquee>
+  <ion-list>
+     
+    <ion-label><b>Email</b></ion-label>
+    <ion-item id="form1">
+      <ion-input type="email" [(ngModel)] = "email"></ion-input>
+    </ion-item>
+  <ion-label><b>Password</b></ion-label>
+    <ion-item id="form1">
+      <ion-input type="password" [(ngModel)] = "password" ></ion-input>
+    </ion-item>
+  </ion-list>
+    
+      <ion-checkbox [(ngModel)] = "value1">Save details</ion-checkbox>
+      <p>Checkbox 1 value is: <b>{{value1}}</b></p>
+  
+  
+      <button id="abc" ion-button round large (click)="login()">login</button>  
+  <br/>
+      <button id="abc" ion-button round large (click)="signup()">Signup</button>
+      <button ion-button clear (click)="frgtpswd()">Forgot password?</button>
+
+
 </ion-content>
